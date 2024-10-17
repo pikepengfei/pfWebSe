@@ -38,7 +38,7 @@ table{border-collapse:collapse;border-spacing:0;}
 .header .container .navbar li a{font-size:16px;height: 50px;display: block;}
 .header .navbar li.on a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}
 .header .navbar li:hover a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}
-
+.header .navbar li ul div a{font-size:16px;height: 50px;display: flex;flex-direction:column}
 
 
 .middle .banner{height: 590px;overflow: hidden;position: relative;}
