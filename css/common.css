@@ -28,19 +28,31 @@ table{border-collapse:collapse;border-spacing:0;}
 .header .welcome .container span b{font-size: 18px;font-weight: normal;}
 /*.header .welcome hr{border-bottom-color:#666;}*/
 
-.header>div.container{ height:104px;}
-.header .logo a{}
-.header .logo { float:left;}
-.header .logo img{ margin-top:20px;margin-left: 12px;}
-.header .navbar { float:left; margin-left:240px;padding-top:50px;}
-.header .container .navbar ul li:first-child{margin-right: 64px;}
-.header .container .navbar li{float:left;display:block; margin-right:50px;}
-.header .container .navbar li a{font-size:16px;height: 50px;display: block;}
-.header .navbar li.on a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}
-.header .navbar li:hover a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}
-.header .navbar li ul div a{font-size:16px;height: 50px;display: flex;flex-direction:column}
-
-
+/*.header>div.container{ height:104px;}*/
+/*.header .logo a{}*/
+/*.header .logo { float:left;}*/
+/*.header .logo img{ margin-top:20px;margin-left: 12px;}*/
+/*.header .navbar { float:left; margin-left:240px;padding-top:50px;}*/
+/*.header .container .navbar ul li:first-child{margin-right: 64px;}*/
+/*.header .container .navbar li{float:left;display:block; margin-right:50px;}*/
+/*.header .container .navbar li a{font-size:16px;height: 50px;display: block;}*/
+/*.header .navbar li.on a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}*/
+/*.header .navbar li:hover a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}*/
+/*.header .navbar li ul div a{font-size:16px;height: 50px;display: flex;flex-direction:column}*/
+.header > div.container {height: 104px;display: flex;justify-content: space-between;align-items: center;}
+.header .logo img {margin-top: 20px;margin-left: 12px;}
+.header .navbar ul {display: flex;}
+.header .navbar li {margin-right: 50px;position: relative;}
+.header .navbar li:first-child {margin-right: 64px;}
+.header .navbar li .ones {font-size: 16px;height: 50px;display: block;line-height: 50px;padding-bottom: 4px;}
+.header .navbar li.on .ones,
+.header .navbar li:hover .ones {color: #a5ca1b;border-bottom: 4px solid #a5ca1b;}
+.header .navbar li ul {display: none;position: absolute;top: 100%;background-color: #fff;border: 1px solid #ccc;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);min-width: 100px;left: 50%;transform: translateX(-50%);}
+.header .navbar li:hover ul {display: block;}
+.header .navbar li ul li {text-align: center;width: 100%;justify-content: center;background-color: #fff;}
+.header .navbar li ul li a {height: auto;width: auto;padding: 10px;line-height: normal;white-space: nowrap;border-bottom: none; font-size: 14px;}
+.header .navbar li ul li:hover a {color: #a5ca1b; border-bottom: 4px solid #a5ca1b;}
+.header .navbar li {margin-right: 50px;position: relative;display: flex; align-items: center;}
 .middle .banner{height: 590px;overflow: hidden;position: relative;}
 .middle .banner .banner_img{height: 590px;overflow: hidden;}
 .middle .banner_img li{position: relative;height: 590px;overflow: hidden;float: left;width: 100%}
