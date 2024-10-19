@@ -8,7 +8,7 @@ code,kbd,pre,samp{font-family:courier new,courier,monospace;word-wrap: break-wor
 small{font-size:12px;}
 ul,ol{list-style:none;}
 a:link,a:visited{color:#000000;text-decoration:none;}
-a:hover{color:#a5ca1b;}
+a:hover{color:#59349c;}
 sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 legend{color:#555;}
@@ -28,33 +28,23 @@ table{border-collapse:collapse;border-spacing:0;}
 .header .welcome .container span b{font-size: 18px;font-weight: normal;}
 /*.header .welcome hr{border-bottom-color:#666;}*/
 
-/*.header>div.container{ height:104px;}*/
-/*.header .logo a{}*/
-/*.header .logo { float:left;}*/
-/*.header .logo img{ margin-top:20px;margin-left: 12px;}*/
-/*.header .navbar { float:left; margin-left:240px;padding-top:50px;}*/
-/*.header .container .navbar ul li:first-child{margin-right: 64px;}*/
-/*.header .container .navbar li{float:left;display:block; margin-right:50px;}*/
-/*.header .container .navbar li a{font-size:16px;height: 50px;display: block;}*/
-/*.header .navbar li.on a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}*/
-/*.header .navbar li:hover a{color:#a5ca1b; border-bottom: solid 4px #a5ca1b;}*/
-/*.header .navbar li ul div a{font-size:16px;height: 50px;display: flex;flex-direction:column}*/
 .header > div.container {height: 104px;display: flex;justify-content: space-between;align-items: center;}
-.header .logo img {margin-top: 20px;margin-left: 12px;}
+.header .logo img {margin-left: 12px;}
 .header .navbar ul {display: flex;}
-.header .navbar li {margin-right: 50px;position: relative;}
+.header .navbar li {font-size: 16px;margin-right: 50px;position: relative;z-index: 1000;}
 .header .navbar li:first-child {margin-right: 64px;}
-.header .navbar li .ones {font-size: 16px;height: 50px;display: block;line-height: 50px;padding-bottom: 4px;}
+.header .navbar li .ones {height: 50px;display: block;line-height: 50px;padding-bottom: 4px;text-decoration: none;}
 .header .navbar li.on .ones,
-.header .navbar li:hover .ones {color: #a5ca1b;border-bottom: 4px solid #a5ca1b;}
+.header .navbar li:hover .ones{height: auto;width: auto;font-size:16px;color: #59349c;border-bottom: 4px solid #59349c;}
 .header .navbar li ul {display: none;position: absolute;top: 100%;background-color: #fff;border: 1px solid #ccc;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);min-width: 100px;left: 50%;transform: translateX(-50%);}
 .header .navbar li:hover ul {display: block;}
 .header .navbar li ul li {text-align: center;width: 100%;justify-content: center;background-color: #fff;}
-.header .navbar li ul li a {height: auto;width: auto;padding: 10px;line-height: normal;white-space: nowrap;border-bottom: none; font-size: 14px;}
-.header .navbar li ul li:hover a {color: #a5ca1b; border-bottom: 4px solid #a5ca1b;}
+.header .navbar li ul li a {height: auto;width: auto;padding: 10px;line-height: normal;white-space: nowrap;text-decoration: none;}
 .header .navbar li {margin-right: 50px;position: relative;display: flex; align-items: center;}
+
+
 .middle .banner{height: 590px;overflow: hidden;position: relative;}
-.middle .banner .banner_img{height: 590px;overflow: hidden;}
+.middle .banner .banner_img{height: 590px;overflow: hidden;z-index: 999; }
 .middle .banner_img li{position: relative;height: 590px;overflow: hidden;float: left;width: 100%}
 .middle .banner_img li a{position: absolute; width: 1920px; left: 50%; margin-left: -960px;}
 .middle .banner_button{position: absolute; bottom: 30px; text-align: center; width: 100%;}
@@ -76,9 +66,9 @@ table{border-collapse:collapse;border-spacing:0;}
 .footer .contactway .title h2{border-top: 4px solid #FFFFFF;font-size: 24px;width:290px ;margin: 15px auto 0;text-align: center;font-weight: normal;}
 .footer .contactway .left p{font-size: 16px;text-indent: 55px;padding: 5px 0;}
 .footer .contactway ul{margin-top: 30px;}
-.footer .contactway .left{width: 745px;text-align: left;float: left;margin-left: 25px;}
+.footer .contactway .left{width: 100%;text-align: left;float: left;margin-left: 25px;}
 .footer .contactway li{float: left;display:inline-block;height: 36px;padding-bottom: 15px;}
-.footer .contactway li span{display: inline-block;*display: inline;*zoom:1; width: 280px;text-indent: 15px;height: 36px;float: left;line-height: 36px;}
+.footer .contactway li span{display: inline-block;*display: inline;*zoom:1; width: auto;text-indent: 15px;height: 36px;float: left;line-height: 36px;}
 .footer .contactway ul li img{float: left;margin-left: 55px;}
 .footer .contactway .right li{float: left;margin-top: 14px;margin-left: 56px;}
 .footer>p{line-height: 68px;font-size: 12px;background-color: #000;text-align: center;height: 68px;}
