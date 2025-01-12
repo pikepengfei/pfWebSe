@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 .middle .right_con .pro_img li{float: left;height: 209px;width: 278px;border: #59349c solid 1px;margin: 0px 54px 64px 0px;}
 .middle .right_con .pro_img ul{margin: 0 -52px 0 20px;}
 .middle .right_con .pro_img li a{display: block;}
@@ -18,6 +17,26 @@
 .middle .right_con .details td{border: solid 1px #aaaaaa;height: 56px;width: 320px;}
 
 .middle .right_con .contact_con ul{}
-.middle .right_con .contact_con li a{display: flex;align-items: center;justify-content: center;}
-.middle .right_con .contact_con li a .productImg{width: 80%;padding: 10px}
-.middle .right_con .contact_con li a .productImg:hover{cursor: pointer;transition: all 0.3s;transform: scale(1.1); }
+.middle .right_con .contact_con  {display: flex;align-items: center;justify-content: center;}
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* 图片自动换行 */
+    justify-content: space-around; /* 图片均匀分布 */
+}
+
+.product-item {
+    width: 100%; /* 图片宽度，自适应 */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* 包含内边距和边框 */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* 移除图片底部留白 */
+}
+@media (max-width: 768px) { /* 响应式设计，小屏幕时图片占满一行 */
+    .product-item {
+        width: 100%;
+    }
+}

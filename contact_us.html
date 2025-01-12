@@ -28,8 +28,8 @@
                 <li><a href="about_us.html">关于我们</a></li>
                 <li><a href="product.html">产品中心</a>
                     <ul>
-                        <li><a href="pro_details.html">产品一</a></li>
-                        <li><a href="pro_details.html">产品二</a></li>
+                        <li><a href="pro_details.html?productId=1">可吸收性黑金倒刺线</a></li>
+                        <li><a href="pro_details.html?productId=2">健适华尔康抗菌线</a></li>
                     </ul>
                 </li>
                 <li><a href="contact_us.html">联系我们</a></li>
@@ -88,18 +88,17 @@
                         <p>http://www.dinghemedical.cn</p>
                     </li>
                 </ol>
-                <form action="">
-
+                <form id="contactForm">
                     昵称<br/>
                     <input type="text" name="name" id="name" value=""/><br/>
                     联系电话<br/>
-                    <input type="text" name="name" id="name" value=""/><br/>
+                    <input type="text" name="phone" id="phone" value=""/><br/>
                     电子邮箱<br/>
-                    <input type="text" name="name" id="name" value=""/><br/>
+                    <input type="text" name="mail" id="mail" value=""/><br/>
                     留言内容<br/>
-                    <textarea></textarea><br/>
+                    <textarea name="message" id="message"></textarea><br/>
                     输入验证码<br/>
-                    <input type="" name="" id="code" value=""/>
+                    <input type="text" name="code" id="code" value=""/>
                     <a href=""><img src="images/contact_yzm.jpg" alt=""/></a>
                     <a href="">看不清楚？换一张</a><br/>
                     <button type="submit">提交</button>
@@ -141,5 +140,59 @@
     </div>
     <p>版权所有： 山东鼎合医疗器械贸易有限公司 </p>
 </div>
+<script>
+    $(document).ready(function() {
+        $("#resetButton").click(function(event) {
+            $("#contactForm")[0].reset(); // 清空表单
+        });
+
+        $("#contactForm").submit(function(event) {
+            event.preventDefault(); // 阻止默认提交行为
+
+            //  客户端验证 (可以添加更多验证)
+            let isValid = true;
+            if ($("#name").val().trim() === "") {
+                alert("请输入昵称");
+                isValid = false;
+            }
+            if ($("#phone").val().trim() === "") {
+                alert("请输入联系电话");
+                isValid = false;
+            }
+            if ($("#email").val().trim() === "") {
+                alert("请输入电子邮箱");
+                isValid = false;
+            }
+
+            if ($("#code").val().trim() === "") {
+                alert("请输入验证码");
+                isValid = false;
+            }
+
+            if (isValid) {
+                //  使用 AJAX 向服务器发送数据
+                $.ajax({
+                    type: "POST",
+                    url: "submit.php", //  你的服务器端处理脚本
+                    data: $("#contactForm").serialize(),
+                    success: function(response) {
+                        alert(response); //  显示服务器端返回的消息
+                        $("#contactForm")[0].reset(); //  清空表单
+                    },
+                    error: function(xhr, status, error) {
+                        alert("提交失败: " + error);
+                    }
+                });
+            }
+        });
+
+        //  验证码刷新 (需要服务器端支持)
+        $("#refreshCaptcha").click(function(event) {
+            event.preventDefault();
+            $("#captchaImg").attr("src", "get_captcha.php?" + Math.random()); //  你的验证码生成脚本
+        });
+    });
+</script>
+
 </body>
 </html>

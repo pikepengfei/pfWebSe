@@ -6,12 +6,42 @@
     <title>产品详情</title>
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/products.css"/>
+<!--    <link rel="stylesheet" href="css/pro_details.css"/>-->
     <script src="js/jquery-3.7.1.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        .middle .right_con .pro_img li{float: left;height: 209px;width: 278px;border: #59349c solid 1px;margin: 0px 54px 64px 0px;}
+        .middle .right_con .pro_img ul{margin: 0 -52px 0 20px;}
+        .middle .right_con .pro_img li a{display: block;}
+        .middle .right_con .pro_img li img{width: 278px;height: 178px;}
+        .middle .right_con .pro_img li span{display: inline-block;*display: inline;zoom: 1;width: 100%;text-align: center;background-color: #666666;color: #FFFFFF;height: 31px;line-height: 31px;}
+        .middle .right_con .pro_img li:hover span{background-color: #83709b;}
+
+
+        .middle .right_con {float: left;margin-left: 0;width: 100%}
+        .middle .right_con .details img{float: left;border: #aaaaaa 1px solid;}
+        .middle .right_con .details h2{font-size: 18px;margin: 40px 0 50px 58px;color: #59349c;font-weight: normal;display: inline-block;*display: inline;*zoom:1;}
+        .middle .right_con .details li{margin-left: 58px;height: 28px;line-height: 28px;margin:0 38px  0 495px;}
+        .middle .right_con .details table{width:954px;text-align: center;margin: 66px 0 66px;}
+        .middle .right_con .details caption{font-size: 18px;height: 80px;line-height: 80px;}
+        .middle .right_con .details td{border: solid 1px #aaaaaa;height: 56px;width: 320px;}
+
+        .middle .right_con .contact_con  {display: flex;align-items: center;justify-content: center;}
+        .product-list {display: flex;flex-wrap: wrap; /* 图片自动换行 */justify-content: space-around; /* 图片均匀分布 */}
+
+        .product-item {width: 100%; /* 图片宽度，自适应 */margin-bottom: 20px;box-sizing: border-box; /* 包含内边距和边框 */}
+
+        .product-item img {width: 100%;height: auto;display: block; /* 移除图片底部留白 */}
+        @media (max-width: 768px) { /* 响应式设计，小屏幕时图片占满一行 */
+            .product-item {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
 <div class="header">
     <div class="welcome">
         <div class="container">
@@ -28,8 +58,8 @@
                 <li><a href="about_us.html">关于我们</a></li>
                 <li><a href="product.html">产品中心</a>
                     <ul>
-                        <li><a href="pro_details.html">产品一</a></li>
-                        <li><a href="pro_details.html">产品二</a></li>
+                        <li><a href="pro_details.html?productId=1">可吸收性黑金倒刺线</a></li>
+                        <li><a href="pro_details.html?productId=2">健适华尔康抗菌线</a></li>
                     </ul>
                 </li>
                 <li><a href="contact_us.html">联系我们</a></li>
@@ -39,7 +69,24 @@
 </div>
 <div class="middle">
 
+    <div class="container clear">
+        <div class="right_con">
+            <div class="title">
+                <h2>产品中心</h2>
+                <span>PROUCTION</span>
+                <p>您当前位置>
+                    <a href="index.html">首页</a>&gt;
+                    <a href="product.html">产品中心</a>&gt;
+                    <a class="active" id="productName">产品名</a>
+                </p>
+            </div>
+            <div class="contact_con clear">
+                <div class="product-list" id="productList">
 
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="footer">
     <div class="contactway clear">
@@ -71,5 +118,58 @@
     </div>
     <p>版权所有： 山东鼎合医疗器械贸易有限公司 </p>
 </div>
+<script>
+    // 获取 URL 参数
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[$$$$]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    const productId = getParameterByName('productId');
+    const productNameElement = document.getElementById('productName');
+
+    // 根据产品 ID 显示不同的图片
+    if (productId) {
+
+
+        const productList = document.getElementById('productList');
+        const productImages = {
+            '1':{
+                name:"可吸收性黑金倒刺线",
+                imgs: ['images/3-5/3-5黑金倒刺线-1.jpg', 'images/3-5/3-5黑金倒刺线-2.jpg','images/3-5/3-5黑金倒刺线-3.jpg','images/3-5/3-5黑金倒刺线-4.jpg','images/3-5/3-5黑金倒刺线-5.jpg','images/3-5/3-5黑金倒刺线-6.jpg','images/3-5/3-5黑金倒刺线-7.jpg','images/3-5/3-5黑金倒刺线-8.jpg','images/3-5/3-5黑金倒刺线-9.jpg','images/3-5/3-5黑金倒刺线-10.jpg','images/3-5/3-5黑金倒刺线-11.jpg','images/3-5/3-5黑金倒刺线-12.jpg','images/3-5/3-5黑金倒刺线-13.jpg','images/3-5/3-5黑金倒刺线-14.jpg','images/3-5/3-5黑金倒刺线-15.jpg','images/3-5/3-5黑金倒刺线-16.jpg'],
+            } ,
+            '2': {
+                name:"健适华尔康抗菌线",
+                imgs:['images/3-6/健适华尔康抗菌线口袋书(1)-1.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-2.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-3.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-4.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-5.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-6.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-7.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-8.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-9.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-10.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-11.jpg', 'images/3-6/健适华尔康抗菌线口袋书(1)-12.jpg'],
+            }
+        };
+        productNameElement.textContent = `${productImages[productId].name}`; // 显示产品名称
+        if (productId && productImages[productId]) {
+            console.log(">>>>>>>找不到该产品信息",productId)
+
+            productImages[productId].imgs.forEach(imgSrc => {
+                const imgElement = document.createElement('img');
+                imgElement.src = imgSrc;
+                imgElement.style =
+                imgElement.alt = `产品${productId} 图片`;
+                imgElement.classList.add('productImg');
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('product-item');
+                itemElement.appendChild(imgElement);
+                productList.appendChild(itemElement);
+            });
+        } else {
+            productList.innerHTML = '<p>找不到该产品信息</p>';
+        }
+    } else {
+        console.log(">>>>>>>请指定产品 ID")
+        productList.innerHTML = '<p>请指定产品 ID</p>';
+    }
+</script>
 </body>
 </html>
