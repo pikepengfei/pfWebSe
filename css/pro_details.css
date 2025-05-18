@@ -7,34 +7,20 @@
 .middle .right_con .pro_img li:hover span{background-color: #83709b;}
 
 
-
-.middle .right_con .details{padding: 0 15px;font-size: 16px;margin-bottom: 90px;}
-.middle .right_con  .details img{float: left;border: #aaaaaa 1px solid;}
+.middle .right_con {float: left;margin-left: 0;width: 100%}
+.middle .right_con .details img{float: left;border: #aaaaaa 1px solid;}
 .middle .right_con .details h2{font-size: 18px;margin: 40px 0 50px 58px;color: #59349c;font-weight: normal;display: inline-block;*display: inline;*zoom:1;}
 .middle .right_con .details li{margin-left: 58px;height: 28px;line-height: 28px;margin:0 38px  0 495px;}
 .middle .right_con .details table{width:954px;text-align: center;margin: 66px 0 66px;}
 .middle .right_con .details caption{font-size: 18px;height: 80px;line-height: 80px;}
 .middle .right_con .details td{border: solid 1px #aaaaaa;height: 56px;width: 320px;}
 
-.middle .right_con .contact_con ul{}
 .middle .right_con .contact_con  {display: flex;align-items: center;justify-content: center;}
-.product-list {
-    display: flex;
-    flex-wrap: wrap; /* 图片自动换行 */
-    justify-content: space-around; /* 图片均匀分布 */
-}
+.product-list {display: flex;flex-wrap: wrap; /* 图片自动换行 */justify-content: space-around; /* 图片均匀分布 */}
 
-.product-item {
-    width: 100%; /* 图片宽度，自适应 */
-    margin-bottom: 20px;
-    box-sizing: border-box; /* 包含内边距和边框 */
-}
+.product-item {width: 100%; /* 图片宽度，自适应 */margin-bottom: 20px;box-sizing: border-box; /* 包含内边距和边框 */}
 
-.product-item img {
-    width: 100%;
-    height: auto;
-    display: block; /* 移除图片底部留白 */
-}
+.product-item img {width: 100%;height: auto;display: block; /* 移除图片底部留白 */}
 @media (max-width: 768px) { /* 响应式设计，小屏幕时图片占满一行 */
     .product-item {
         width: 100%;

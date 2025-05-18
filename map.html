@@ -23,7 +23,7 @@
     }
     function createMap(){ 
       map = new BMap.Map("map"); 
-      map.centerAndZoom(new BMap.Point(120.203195,36.341903),19);
+      map.centerAndZoom(new BMap.Point(116.574259,39.788209),19);
     }
     function setMapEvent(){
       map.enableScrollWheelZoom();
@@ -38,7 +38,7 @@
     }
     function addMapOverlay(){
       var markers = [
-        {content:"山东省青岛市胶州市李哥庄镇李魏屯新村综合楼",title:"北京德润康宁新材料科技有限公司",imageOffset: {width:-46,height:-21},position:{lat:36.341903,lng:120.203195}}
+        {content:"北京市北京经济技术开发区科创十三街18号院3号楼12层",title:"北京德润康宁新材料科技有限公司",imageOffset: {width:-46,height:-21},position:{lat:39.788209,lng:116.574259}}
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);

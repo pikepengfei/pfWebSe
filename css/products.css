@@ -17,7 +17,9 @@
 .middle .right_con .details caption{font-size: 18px;height: 80px;line-height: 80px;}
 .middle .right_con .details td{border: solid 1px #aaaaaa;height: 56px;width: 320px;}
 
-.middle .right_con .contact_con ul{}
+/* .middle .right_con .contact_con ul{} */
 .middle .right_con .contact_con li a{display: flex;align-items: center;justify-content: center;}
 .middle .right_con .contact_con li a .productImg{width: 80%;padding: 10px}
 .middle .right_con .contact_con li a .productImg:hover{cursor: pointer;transition: all 0.3s;transform: scale(1.1); }
+
+.middle .right_con .contact_spzx{display: flex;flex-direction: column;gap: 40px;}
