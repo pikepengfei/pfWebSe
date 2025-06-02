@@ -7,7 +7,19 @@
 .middle .left_con .sidebar .title p{display: block;border-top: 2px solid #FFFFFF;font-size: 24px;width:126px ;margin:6px auto;text-align: center;}
 .middle .left_con .sidebar .title p>span{display: inline-block;*display: inline;*zoom:1;width: 86px;background-color: #05561b;margin-top: -13px;font-size: 12px;}
 .middle .left_con ul{background-color: #FFFFFF;border: solid 1px #59349c;}
-.middle .left_con li a{display: block;height: 42px;border-top:1px solid #59349c;line-height: 42px;}
+.middle .left_con li a{display: flex;                  /* 改为flex布局 */
+    align-items: center;            /* 垂直居中 */
+    min-height: 42px;               /* 保持最小高度 */
+    line-height: 1.4;               /* 行高优化 */
+    overflow: hidden;               /* 溢出隐藏 */
+    padding: 0 10px;                /* 添加水平内边距 */
+    box-sizing: border-box;         /* 盒模型计算包含padding */
+
+    /* 多行文本截断 */
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;}
 .middle .left_con li.on a{background-color: #59349c;color: #fff;}
 .middle .left_con li:hover a{background-color: #59349c;color: #fff;}
 .middle .left_con h2{font-family: arial;font-size: 16px;font-weight:normal;height: 64px;}

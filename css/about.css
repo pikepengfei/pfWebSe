@@ -15,3 +15,208 @@
 /* 添加样式，方便定位标题 */
 .section-title {margin-top: 40px;font-size: 20px;font-weight: bold;}
 .moretit {font-size: 15px;font-weight: bold;}
+
+:root {
+    --spain-red: #AA1F2E;
+    --accent-gold: #D4AF37;
+    --dark-blue: #003366;
+    --light-bg: #f8f9fa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Microsoft YaHei', sans-serif;
+}
+body {
+    color: #333;
+    line-height: 1.6;
+}
+.container-cell{
+    margin:0 auto;
+    position: relative;
+}
+/* 数据看板 */
+.stats-panel {
+    background: var(--dark-blue);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 30px 0;
+}
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.stat-item {
+    padding: 20px;
+    min-width: 200px;
+}
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+}
+
+/* 内容区块 */
+.section {
+    padding: 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: var(--accent-gold);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 服务表格 */
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.service-table th {
+    background: var(--spain-red);
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+.service-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+.service-table tr:nth-child(even) {
+    background: var(--light-bg);
+}
+
+/* 授权展示 */
+.authorization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 40px;
+}
+.auth-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+}
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.auth-header {
+    background: var(--dark-blue);
+    color: white;
+    padding: 15px;
+}
+.auth-body {
+    padding: 20px;
+}
+.auth-feature {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.auth-feature:before {
+    content: '✓';
+    color: var(--accent-gold);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 未来展望 */
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+.future-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 3px solid var(--accent-gold);
+}
+.future-card h3 {
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.future-card h3:before {
+    content: '→';
+    color: var(--spain-red);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* 文化卡片 */
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+.culture-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--spain-red);
+}
+
+/* 里程碑 */
+.milestones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.milestone {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(170, 31, 46, 0.05);
+    border-radius: 8px;
+    text-align: center;
+}
+.year {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--spain-red);
+    margin-bottom: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+    .stats-container {
+        flex-direction: column;
+    }
+    .milestones {
+        flex-direction: column;
+    }
+}

@@ -27,17 +27,17 @@
         <div class="navbar">
             <ul class="navbar-menu">
                 <li class="on"><a href="index.html">首页</a></li>
-                <li><a href="about_us.html">关于我们</a>
-                    <ul>
-                        <li><a href="pro_details.html?productId=3">公司简介</a></li>
-                        <li><a href="pro_spzx.html">视频中心</a></li>
-                    </ul>
-                </li>
+                <li><a href="about_us.html">关于我们</a></li>
                 <li><a href="product.html">产品中心</a>
                     <ul>
-                        <li><a href="pro_details.html?productId=1">包装案例</a></li>
-                        <li><a href="pro_details.html?productId=2">PE/PVC 包装与应用</a></li>
-                        <li><a href="pro_details.html?productId=4">精彩瞬间</a></li>
+                        <li><a href="pro_details.html?productId=0">西班牙留学总册子2024</a></li>
+                        <li><a href="pro_details.html?productId=1">罗维拉·依维尔基里大学国际MBA官方硕士</a></li>
+                        <li><a href="pro_details.html?productId=2">CEDEU 电子商务官方硕士</a></li>
+                        <li><a href="pro_details.html?productId=3">巴塞罗那自治大学eina官硕教研项目</a></li>
+                        <li><a href="pro_details.html?productId=4">巴塞罗那大学 电影与视觉文化研究官硕项目</a></li>
+                        <li><a href="pro_details.html?productId=5">巴自治BCE语言预科班册子2025版</a></li>
+                        <li><a href="pro_details.html?productId=6">马德里自治大学</a></li>
+                        <li><a href="pro_details.html?productId=7">名校直通--全球艺术教研项目西班牙</a></li>
                     </ul>
                 </li>
                 <li><a href="contact_us.html">联系我们</a></li>
@@ -85,7 +85,7 @@
                 </li>
                 <li>
                     <img src="images/icon_wz.png"/>
-                    <span>网址:http://www.derunkangningnewmaterials.top</span>
+                    <span>网址:http://www.olestudy.online</span>
                 </li>
                 <li>
                     <img src="images/icon_msg.png"/>
@@ -122,21 +122,136 @@
 
         const productList = document.getElementById('productList');
         const productImages = {
-            '1':{
-                name:"包装案例",
-                imgs: ['images/3-5/产品案例-1.png', 'images/3-5/产品案例-2.jpg','images/3-5/产品案例-3.jpg','images/3-5/产品案例-4.png','images/3-5/产品案例-5.jpg','images/3-5/产品案例-6.jpg','images/3-5/产品案例-7.jpg','images/3-5/产品案例-8.jpg','images/3-5/产品案例-9.jpg','images/3-5/产品案例-10.JPG','images/3-5/产品案例-11.png','images/3-5/产品案例-12.PNG','images/3-5/产品案例-13.JPG','images/3-5/产品案例-14.JPG','images/3-5/产品案例-15.JPG','images/3-5/产品案例-16.JPG','images/3-5/产品案例-17.jpg','images/3-5/产品案例-18.png','images/3-5/产品案例-19.jpg','images/3-5/产品案例-20.jpg','images/3-5/产品案例-21.jpg',],
+            '0':{
+                name:"西班牙留学总册2024",
+                imgs: ['images/3-0/西班牙留学总册子2024.pdf_第1页.png', 
+                'images/3-0/西班牙留学总册子2024.pdf_第2页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第3页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第4页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第5页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第6页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第7页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第8页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第9页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第10页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第11页.png',
+                'images/3-0/西班牙留学总册子2024.pdf_第12页.png',
+            ]
+            },
+            '1': {
+                name:"罗维拉·依维尔基里大学国际MBA官方硕士",
+                imgs:['images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(1).jpg', 'images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(2).jpg', 'images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(3).jpg', 'images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(4).jpg'],
             },
             '2': {
-                name:"PE/PVC 包装与应用",
-                imgs:['images/3-6/风力画册跨页-1.jpg', 'images/3-6/风力画册跨页-2.jpg', 'images/3-6/风力画册跨页-3.jpg', 'images/3-6/风力画册跨页-4.jpg'],
+                name:"CEDEU 电子商务官方硕士",
+                imgs:[
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第1页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第2页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第3页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第4页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第5页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第6页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第7页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第8页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第9页.png',
+                    'images/3-2/CEDEU 电子商务 册子.pdf_第10页.png',
+                ],
             },
-            '3': {
-                name:"德润康宁简介",
-                imgs:['images/3-7/150818德润康宁最新简介-1.jpg', 'images/3-7/150818德润康宁最新简介-2.jpg', 'images/3-7/150818德润康宁最新简介-3.jpg', 'images/3-7/150818德润康宁最新简介-4.jpg', 'images/3-7/150818德润康宁最新简介-5.jpg', 'images/3-7/150818德润康宁最新简介-6.jpg', 'images/3-7/150818德润康宁最新简介-7.jpg', 'images/3-7/150818德润康宁最新简介-8.jpg', 'images/3-7/150818德润康宁最新简介-9.jpg', 'images/3-7/150818德润康宁最新简介-10.jpg', 'images/3-7/150818德润康宁最新简介-11.jpg', 'images/3-7/150818德润康宁最新简介-12.jpg', 'images/3-7/150818德润康宁最新简介-13.jpg', 'images/3-7/150818德润康宁最新简介-14.jpg', 'images/3-7/150818德润康宁最新简介-15.jpg'],
+            '3':{
+                name:"巴塞罗那自治大学eina官硕教研项目",
+                imgs:[
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第1页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第2页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第3页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第4页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第5页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第6页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第7页.png',
+                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第8页.png',
+                ]
             },
             '4':{
-                name:"精彩瞬间",
-                imgs:['images/3-8/042d6454-f159-41d5-8827-039f5fca8ad5.png','images/3-8/8ee90963fb9b92829ecddb4566d0387e.JPG','images/3-8/6e2932f7e68237baa4a2a1418a40ceac_t014109b49b12ca2f2a.jpg','images/3-8/2023_06_02_17_03_IMG_8631.JPG','images/3-8/2023_11_02_10_37_IMG_9884.JPG','images/3-8/2023_11_07_17_47_IMG_9937.JPG','images/3-8/2023_12_22_13_43_IMG_0262.JPG','images/3-8/2023_12_22_14_02_IMG_0241.JPG','images/3-8/cf202200d38069ef9b36cd2223d9f6d1.JPG']
+                name:"巴塞罗那大学 电影与视觉文化研究官硕项目",
+                imgs:[
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第1页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第2页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第3页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第4页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第5页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第6页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第7页.png',
+                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第8页.png',
+                ]
+            },
+            '5':{
+                name:"巴自治BCE语言预科班册子2025版",
+                imgs:[
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第1页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第2页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第3页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第4页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第5页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第6页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第7页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第8页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第9页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第10页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第11页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第12页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第13页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第14页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第15页.png',
+                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第16页.png',
+                ]
+            },
+            '6':{
+                name:"马德里自治大学",
+                imgs:[
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第1页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第2页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第3页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第4页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第5页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第6页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第7页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第8页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第9页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第10页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第11页.png',
+                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第12页.png',
+                ]
+            },
+            '7':{
+                name:"名校直通--全球艺术教研项目西班牙",
+                imgs:[
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第1页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第2页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第3页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第4页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第5页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第6页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第7页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第8页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第9页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第10页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第11页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第12页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第13页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第14页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第15页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第16页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第17页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第18页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第19页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第20页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第21页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第22页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第23页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第24页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第25页.png',
+                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第26页.png',
+                    
+                ]
             }
         };
         productNameElement.textContent = `${productImages[productId].name}`; // 显示产品名称
