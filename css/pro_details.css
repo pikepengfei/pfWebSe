@@ -17,7 +17,7 @@
 
 .middle .right_con .contact_con  {display: flex;align-items: center;justify-content: center;}
 .product-list {display: flex;flex-wrap: wrap; /* 图片自动换行 */justify-content: space-around; /* 图片均匀分布 */}
-
+.productText {width: 100%; /* 文本宽度，自适应 */font-size: 18px;line-height: 2cap;}
 .product-item {width: 100%; /* 图片宽度，自适应 */margin-bottom: 20px;box-sizing: border-box; /* 包含内边距和边框 */}
 
 .product-item img {width: 100%;height: auto;display: block; /* 移除图片底部留白 */}
