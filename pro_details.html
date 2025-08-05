@@ -1,12 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>产品详情</title>
-    <link rel="stylesheet" href="css/common.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/pro_details.css"/>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pro_details.css" />
     <script src="js/jquery-3.7.1.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 
@@ -14,268 +15,310 @@
 
 <body>
 
-<div class="header">
-    <div class="welcome">
-        <div class="container">
-            <p>您好，欢迎来到欧乐行（北京）企业顾问有限公司</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.jpg"/></a>
-        </div>
-        <div class="navbar">
-            <ul class="navbar-menu">
-                <li class="on"><a href="index.html">首页</a></li>
-                <li><a href="about_us.html">关于我们</a></li>
-                <li><a href="product.html">产品中心</a>
-                    <ul>
-                        <li><a href="pro_details.html?productId=0">西班牙留学总册子2024</a></li>
-                        <li><a href="pro_details.html?productId=1">罗维拉·依维尔基里大学国际MBA官方硕士</a></li>
-                        <li><a href="pro_details.html?productId=2">CEDEU 电子商务官方硕士</a></li>
-                        <li><a href="pro_details.html?productId=3">巴塞罗那自治大学eina官硕教研项目</a></li>
-                        <li><a href="pro_details.html?productId=4">巴塞罗那大学 电影与视觉文化研究官硕项目</a></li>
-                        <li><a href="pro_details.html?productId=5">巴自治BCE语言预科班册子2025版</a></li>
-                        <li><a href="pro_details.html?productId=6">马德里自治大学</a></li>
-                        <li><a href="pro_details.html?productId=7">名校直通--全球艺术教研项目西班牙</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact_us.html">联系我们</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="middle">
-
-    <div class="container clear">
-        <div class="right_con">
-            <div class="title">
-                <h2 id="pageTitle">产品中心</h2>
-                <span>PROUCTION</span>
-                <p>您当前位置>
-                    <a href="index.html">首页</a>&gt;
-                    <a id="productCenterLink" href="product.html">产品中心 &gt;</a>
-                    <a class="active" id="productName">产品名</a>
-                </p>
+    <div class="header">
+        <div class="welcome">
+            <div class="container">
+                <p>您好，欢迎来到欧乐行（北京）企业顾问有限公司</p>
             </div>
-            <div class="contact_con clear">
-                <div class="product-list" id="productList">
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.jpg" /></a>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-menu">
+                    <li class="on"><a href="index.html">首页</a></li>
+                    <li><a href="about_us.html">关于我们</a></li>
+                    <li><a href="product.html">产品中心</a>
+                        <ul>
+                            <ul>
+                                <li><a href="pro_details.html?productId=0">棋点团建</a></li>
+                                <li><a href="pro_details.html?productId=1">优创传媒</a></li>
+                                <li><a href="pro_details.html?productId=2">海纳助残</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li><a href="contact_us.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
 
+        <div class="container clear">
+            <div class="right_con">
+                <div class="title">
+                    <h2 id="pageTitle">产品中心</h2>
+                    <span>PROUCTION</span>
+                    <p>您当前位置>
+                        <a href="index.html">首页</a>&gt;
+                        <a id="productCenterLink" href="product.html">产品中心 &gt;</a>
+                        <a class="active" id="productName">产品名</a>
+                    </p>
+                </div>
+                <div class="contact_con clear">
+                    <div class="product-list" id="productList">
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="footer">
-    <div class="contactway clear">
-        <div class="title">
-            <h1>联系我们</h1>
-            <h2><span>CONTACTWAY</span></h2>
+    <div class="footer">
+        <div class="contactway clear">
+            <div class="title">
+                <h1>联系我们</h1>
+                <h2><span>CONTACTWAY</span></h2>
+            </div>
+            <div class="left">
+                <p>北京海纳山川科技有限公司</p>
+                <ul>
+                    <li>
+                        <img src="images/icon_ph.png" alt="电话" />
+                        <span>联系电话：13520558521</span>
+                    </li>
+                    <li>
+                        <img src="images/icon_add.png" alt="地址" />
+                        <span>地址：北京市昌平区北清路1号院5号楼11层1单元</span>
+                    </li>
+                    <li>
+                        <img src="images/icon_wz.png" alt="网址" />
+                        <span>网址:http://www.hainashanchan.top</span>
+                    </li>
+                    <li>
+                        <img src="images/icon_msg.png" alt="邮箱" />
+                        <span>邮箱：1819893199@qq.com</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="left">
-            <p>欧乐行（北京）企业顾问有限公司</p>
-            <ul>
-                <li>
-                    <img src="images/icon_ph.png"/>
-                    <span>联系电话：13582379366</span>
-                </li>
-                <li>
-                    <img src="images/icon_add.png"/>
-                    <span>地址：北京市怀柔区雁栖经济开发区雁栖大街13号3层</span>
-                </li>
-                <li>
-                    <img src="images/icon_wz.png"/>
-                    <span>网址:http://www.olestudy.online</span>
-                </li>
-                <li>
-                    <img src="images/icon_msg.png"/>
-                    <span>邮箱：286385390@qq.com </span>
-                </li>
-            </ul>
-        </div>
+        <p>版权所有： 北京海纳山川科技有限公司 </p>
     </div>
-    <p>版权所有： 欧乐行（北京）企业顾问有限公司 </p>
-</div>
-<script>
-    // 获取 URL 参数
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[$$$$]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    const productId = getParameterByName('productId');
-    const productNameElement = document.getElementById('productName');
-    const productCenterLink = document.getElementById('productCenterLink');
-    const pageTitle = document.getElementById('pageTitle');
-    if (productId === '3') { // 注意 productId 是字符串类型
-        pageTitle.textContent = '公司简介';
-        productCenterLink.style.display = 'none';
-    }
-    // 根据产品 ID 显示不同的图片
-    if (productId) {
-
-
-        const productList = document.getElementById('productList');
-        const productImages = {
-            '0':{
-                name:"西班牙留学总册2024",
-                imgs: ['images/3-0/西班牙留学总册子2024.pdf_第1页.png', 
-                'images/3-0/西班牙留学总册子2024.pdf_第2页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第3页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第4页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第5页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第6页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第7页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第8页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第9页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第10页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第11页.png',
-                'images/3-0/西班牙留学总册子2024.pdf_第12页.png',
-            ]
-            },
-            '1': {
-                name:"罗维拉·依维尔基里大学国际MBA官方硕士",
-                imgs:['images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(1).jpg', 'images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(2).jpg', 'images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(3).jpg', 'images/3-1/2024罗维拉·依维尔基里大学国际MBA官方硕士(4).jpg'],
-            },
-            '2': {
-                name:"CEDEU 电子商务官方硕士",
-                imgs:[
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第1页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第2页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第3页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第4页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第5页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第6页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第7页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第8页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第9页.png',
-                    'images/3-2/CEDEU 电子商务 册子.pdf_第10页.png',
-                ],
-            },
-            '3':{
-                name:"巴塞罗那自治大学eina官硕教研项目",
-                imgs:[
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第1页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第2页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第3页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第4页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第5页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第6页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第7页.png',
-                    'images/3-3/巴塞罗那自治大学eina官硕教研项目打印版.pdf_第8页.png',
-                ]
-            },
-            '4':{
-                name:"巴塞罗那大学 电影与视觉文化研究官硕项目",
-                imgs:[
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第1页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第2页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第3页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第4页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第5页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第6页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第7页.png',
-                    'images/巴塞罗那大学 电影与视觉文化研究官硕项目打印版/巴塞罗那大学 电影与视觉文化研究官硕项目打印版.pdf_第8页.png',
-                ]
-            },
-            '5':{
-                name:"巴自治BCE语言预科班册子2025版",
-                imgs:[
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第1页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第2页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第3页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第4页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第5页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第6页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第7页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第8页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第9页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第10页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第11页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第12页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第13页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第14页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第15页.png',
-                    'images/巴自治BCE语言预科班册子2025版/巴自治BCE语言预科班册子2025版.pdf_第16页.png',
-                ]
-            },
-            '6':{
-                name:"马德里自治大学",
-                imgs:[
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第1页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第2页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第3页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第4页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第5页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第6页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第7页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第8页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第9页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第10页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第11页.png',
-                    'images/马德里自治大学册子/马德里自治大学册子（4）.pdf_第12页.png',
-                ]
-            },
-            '7':{
-                name:"名校直通--全球艺术教研项目西班牙",
-                imgs:[
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第1页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第2页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第3页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第4页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第5页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第6页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第7页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第8页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第9页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第10页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第11页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第12页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第13页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第14页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第15页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第16页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第17页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第18页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第19页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第20页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第21页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第22页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第23页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第24页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第25页.png',
-                    'images/名校直通--全球艺术教研项目西班牙/名校直通--全球艺术教研项目西班牙.pdf_第26页.png',
-                    
-                ]
-            }
-        };
-        productNameElement.textContent = `${productImages[productId].name}`; // 显示产品名称
-        if (productId && productImages[productId]) {
-            console.log(">>>>>>>找不到该产品信息",productId)
-
-            productImages[productId].imgs.forEach(imgSrc => {
-                const imgElement = document.createElement('img');
-                imgElement.src = imgSrc;
-                imgElement.style =
-                imgElement.alt = `产品${productId} 图片`;
-                imgElement.classList.add('productImg');
-                const itemElement = document.createElement('div');
-                itemElement.classList.add('product-item');
-                itemElement.appendChild(imgElement);
-                productList.appendChild(itemElement);
-            });
-        } else {
-            productList.innerHTML = '<p>找不到该产品信息</p>';
+    <script>
+        // 获取 URL 参数
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[$$$$]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
         }
-    } else {
-        console.log(">>>>>>>请指定产品 ID")
-        productList.innerHTML = '<p>请指定产品 ID</p>';
-    }
-</script>
+
+        const productId = getParameterByName('productId');
+        const productNameElement = document.getElementById('productName');
+        const productCenterLink = document.getElementById('productCenterLink');
+        const pageTitle = document.getElementById('pageTitle');
+        if (productId === '3') { // 注意 productId 是字符串类型
+            pageTitle.textContent = '公司简介';
+            productCenterLink.style.display = 'none';
+        }
+        // 根据产品 ID 显示不同的图片
+        if (productId) {
+
+
+            const productList = document.getElementById('productList');
+            const productImages = {
+                '0': {
+                    name: "棋点团建",
+                    imgs: [
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第1页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第2页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第3页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第4页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第5页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第6页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第7页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第8页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第9页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第10页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第11页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第12页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第13页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第14页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第15页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第16页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第17页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第18页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第19页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第20页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第21页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第22页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第23页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第24页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第25页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第26页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第27页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第28页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第29页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第30页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第31页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第32页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第33页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第34页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第35页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第36页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第37页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第38页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第39页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第40页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第41页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第42页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第43页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第44页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第45页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第46页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第47页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第48页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第49页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第50页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第51页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第52页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第53页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第54页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第55页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第56页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第57页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第58页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第59页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第60页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第61页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第62页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第63页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第64页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第65页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第66页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第67页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第68页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第69页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第70页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第71页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第72页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第73页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第74页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第75页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第76页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第77页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第78页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第79页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第80页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第81页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第82页.png',
+                        'images/棋点团建/棋点团建-专业省心-期待为您服务2024品牌介绍_第83页.png',
+
+                    ]
+                },
+                '1': {
+                    name: "优创传媒",
+                    imgs: ['images/优创传媒/优创传媒.pdf_第1页.png',
+                        'images/优创传媒/优创传媒.pdf_第2页.png',
+                        'images/优创传媒/优创传媒.pdf_第3页.png',
+                        'images/优创传媒/优创传媒.pdf_第4页.png',
+                        'images/优创传媒/优创传媒.pdf_第5页.png',
+                        'images/优创传媒/优创传媒.pdf_第6页.png',
+                        'images/优创传媒/优创传媒.pdf_第7页.png',
+                        'images/优创传媒/优创传媒.pdf_第8页.png',
+                        'images/优创传媒/优创传媒.pdf_第9页.png',
+                        'images/优创传媒/优创传媒.pdf_第10页.png',
+                        'images/优创传媒/优创传媒.pdf_第11页.png',
+                        'images/优创传媒/优创传媒.pdf_第12页.png',
+                        'images/优创传媒/优创传媒.pdf_第13页.png',
+                        'images/优创传媒/优创传媒.pdf_第14页.png',
+                        'images/优创传媒/优创传媒.pdf_第15页.png',
+                        'images/优创传媒/优创传媒.pdf_第16页.png',
+                        'images/优创传媒/优创传媒.pdf_第17页.png',
+                        'images/优创传媒/优创传媒.pdf_第18页.png',
+                        'images/优创传媒/优创传媒.pdf_第19页.png',
+                        'images/优创传媒/优创传媒.pdf_第20页.png',
+                        'images/优创传媒/优创传媒.pdf_第21页.png',
+                        'images/优创传媒/优创传媒.pdf_第22页.png',
+                        'images/优创传媒/优创传媒.pdf_第23页.png',
+                        'images/优创传媒/优创传媒.pdf_第24页.png',
+                        'images/优创传媒/优创传媒.pdf_第25页.png',
+                        'images/优创传媒/优创传媒.pdf_第26页.png',
+                        'images/优创传媒/优创传媒.pdf_第27页.png',
+                        'images/优创传媒/优创传媒.pdf_第28页.png',
+                        'images/优创传媒/优创传媒.pdf_第29页.png',
+                        'images/优创传媒/优创传媒.pdf_第30页.png',
+                        'images/优创传媒/优创传媒.pdf_第31页.png',
+                        'images/优创传媒/优创传媒.pdf_第32页.png',
+                        'images/优创传媒/优创传媒.pdf_第33页.png',
+                        'images/优创传媒/优创传媒.pdf_第34页.png',
+                        'images/优创传媒/优创传媒.pdf_第35页.png',
+                        'images/优创传媒/优创传媒.pdf_第36页.png',
+                        'images/优创传媒/优创传媒.pdf_第37页.png',
+                        'images/优创传媒/优创传媒.pdf_第38页.png',
+                        'images/优创传媒/优创传媒.pdf_第39页.png',
+                        'images/优创传媒/优创传媒.pdf_第40页.png',
+                        'images/优创传媒/优创传媒.pdf_第41页.png',
+                        'images/优创传媒/优创传媒.pdf_第42页.png',
+                        'images/优创传媒/优创传媒.pdf_第43页.png',
+                        'images/优创传媒/优创传媒.pdf_第44页.png',
+                        'images/优创传媒/优创传媒.pdf_第45页.png',
+                        'images/优创传媒/优创传媒.pdf_第46页.png',
+                        'images/优创传媒/优创传媒.pdf_第47页.png',
+                    ]
+                },
+                '2': {
+                    name: "海纳助残",
+                    imgs: [
+                        'images/海纳助残/海纳助残.pdf_第1页.png',
+                        'images/海纳助残/海纳助残.pdf_第2页.png',
+                        'images/海纳助残/海纳助残.pdf_第3页.png',
+                        'images/海纳助残/海纳助残.pdf_第4页.png',
+                        'images/海纳助残/海纳助残.pdf_第5页.png',
+                        'images/海纳助残/海纳助残.pdf_第6页.png',
+                        'images/海纳助残/海纳助残.pdf_第7页.png',
+                        'images/海纳助残/海纳助残.pdf_第8页.png',
+                        'images/海纳助残/海纳助残.pdf_第9页.png',
+                        'images/海纳助残/海纳助残.pdf_第10页.png',
+                        'images/海纳助残/海纳助残.pdf_第11页.png',
+                        'images/海纳助残/海纳助残.pdf_第12页.png',
+                        'images/海纳助残/海纳助残.pdf_第13页.png',
+                        'images/海纳助残/海纳助残.pdf_第14页.png',
+                        'images/海纳助残/海纳助残.pdf_第15页.png',
+                        'images/海纳助残/海纳助残.pdf_第16页.png',
+                        'images/海纳助残/海纳助残.pdf_第17页.png',
+                        'images/海纳助残/海纳助残.pdf_第18页.png',
+                        'images/海纳助残/海纳助残.pdf_第19页.png',
+                        'images/海纳助残/海纳助残.pdf_第20页.png',
+                        'images/海纳助残/海纳助残.pdf_第21页.png',
+                        'images/海纳助残/海纳助残.pdf_第22页.png',
+                        'images/海纳助残/海纳助残.pdf_第23页.png',
+                        'images/海纳助残/海纳助残.pdf_第24页.png',
+                        'images/海纳助残/海纳助残.pdf_第25页.png',
+                        'images/海纳助残/海纳助残.pdf_第26页.png',
+                        'images/海纳助残/海纳助残.pdf_第27页.png',
+                        'images/海纳助残/海纳助残.pdf_第28页.png',
+                    ],
+                },
+
+
+            };
+            productNameElement.textContent = `${productImages[productId].name}`; // 显示产品名称
+            if (productId && productImages[productId]) {
+                console.log(">>>>>>>找不到该产品信息", productId)
+
+                productImages[productId].imgs.forEach(imgSrc => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = imgSrc;
+                    imgElement.style =
+                        imgElement.alt = `产品${productId} 图片`;
+                    imgElement.classList.add('productImg');
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('product-item');
+                    itemElement.appendChild(imgElement);
+                    productList.appendChild(itemElement);
+                });
+            } else {
+                productList.innerHTML = '<p>找不到该产品信息</p>';
+            }
+        } else {
+            console.log(">>>>>>>请指定产品 ID")
+            productList.innerHTML = '<p>请指定产品 ID</p>';
+        }
+    </script>
 </body>
+
 </html>
