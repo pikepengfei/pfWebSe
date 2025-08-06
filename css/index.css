@@ -23,7 +23,8 @@ h2{font-weight: normal;}
 .middle .products .title{text-align: center;}
 .middle .products .title h2{font-weight: normal;display:inline-block; width:148px;font-family: "Regular"; }
 .middle .products .title span{ display:inline-block; border-bottom:4px solid #fff; width:68px; margin-bottom:4px;}
-.middle .products p{text-align:center; display:block; width:810px; margin:0 auto;font-size: 14px;line-height: 24px;}
+.middle .products p{text-align:center; text-align: center; justify-content: center; display: flex; width:810px; margin:0 auto;font-size: 14px;line-height: 24px;}
+
 .middle .products .products_img p>a{ display:inline-block; background-color: #59349c; padding:0px 45px; margin-top:23px; }
 .middle .products li{float: left;margin:20px 23px 0px 0px;width: 370px;}
 .middle .products li a{display: block;height: inherit;width: inherit;color: #ffffff;background-color: #59349c;}

@@ -23,7 +23,7 @@
     }
     function createMap(){ 
       map = new BMap.Map("map"); 
-      map.centerAndZoom(new BMap.Point(116.703385,40.367862),19);
+      map.centerAndZoom(new BMap.Point(116.291062,40.098863),19);
     }
     function setMapEvent(){
       map.enableScrollWheelZoom();
@@ -38,7 +38,7 @@
     }
     function addMapOverlay(){
       var markers = [
-        {content:"北京市怀柔区雁栖经济开发区雁栖大街13号3层",title:"欧乐行（北京）企业顾问有限公司",imageOffset: {width:-46,height:-21},position:{lat:40.367862,lng:116.703385}}
+        {content:"北京市昌平区北清路1号院5号楼11层1单元",title:"北京海纳山川科技有限公司",imageOffset: {width:-46,height:-21},position:{lat:40.098863,lng:116.291062}}
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
